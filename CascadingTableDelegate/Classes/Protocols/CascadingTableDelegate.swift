@@ -29,7 +29,7 @@ public protocol CascadingTableDelegate: UITableViewDataSource, UITableViewDelega
 	
 	- warning: Autocompleting this field in Xcode might not add the `weak` keyword. Kindly add this manually to prevent retain cycle from happening.
 	*/
-	weak var parentDelegate: CascadingTableDelegate? { get set }
+	var parentDelegate: CascadingTableDelegate? { get set }
 	
 	/**
 	Base initializer for this instance.
